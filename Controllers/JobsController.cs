@@ -5,6 +5,16 @@ using Microsoft.AspNetCore.Mvc;
 [Route("api/[controller]")]
 public class JobsController : ControllerBase
 {
+
+    private readonly IEmailJobService _emailService;
+
+    public JobsController(IEmailJobService emailService)
+    {
+        _emailService = emailService;
+    }
+
+
+
     [HttpPost("enqueue")]
     public IActionResult EnqueueJob()
     {
@@ -36,6 +46,14 @@ public class JobsController : ControllerBase
         BackgroundJob.ContinueJobWith(id, () => Console.WriteLine("🔗 Second job after first"));
         return Ok("Chained job executed.");
     }
+
+    [HttpPost("email-job")]
+    public IActionResult EmailJob([FromQuery] string email)
+    {
+        BackgroundJob.Enqueue<IEmailJobService>(svc => svc.SendWelcomeEmailAsync(email));
+        return Ok("Email job enqueued!");
+    }
+
 
 
 
