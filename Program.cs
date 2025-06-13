@@ -25,6 +25,7 @@ app.UseHangfireDashboard();
 app.MapHangfireDashboard();
 
 // Example background job
+//Fire and Forget Job
 BackgroundJob.Enqueue(() => Console.WriteLine("Hello from Hangfire!"));
 
 app.Run();

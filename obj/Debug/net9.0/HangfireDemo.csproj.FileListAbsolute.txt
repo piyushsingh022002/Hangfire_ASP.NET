@@ -53,3 +53,4 @@
 /Users/piyush/HangfireDemo/obj/Debug/net9.0/HangfireDemo.pdb
 /Users/piyush/HangfireDemo/obj/Debug/net9.0/HangfireDemo.genruntimeconfig.cache
 /Users/piyush/HangfireDemo/obj/Debug/net9.0/ref/HangfireDemo.dll
+/Users/piyush/HangfireDemo/obj/Debug/net9.0/HangfireDemo.sourcelink.json
