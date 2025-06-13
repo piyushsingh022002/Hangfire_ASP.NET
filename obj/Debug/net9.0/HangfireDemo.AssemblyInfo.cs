@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HangfireDemo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc7f73a4b0fc6ee1c980e16ed866bcccc8f61cb4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7184e318cce01df1fac835af9693af695ce4020a")]
 [assembly: System.Reflection.AssemblyProductAttribute("HangfireDemo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HangfireDemo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
