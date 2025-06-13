@@ -3,10 +3,11 @@ using Hangfire.PostgreSql;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services
 builder.Services.AddControllers();
+builder.Services.AddScoped<IEmailJobService, EmailJobService>();
 
-// Configure Hangfire with PostgreSQL
+
+
 var connectionString = builder.Configuration.GetConnectionString("HangfireConnection");
 builder.Services.AddHangfire(config =>
     config.UsePostgreSqlStorage(c =>
